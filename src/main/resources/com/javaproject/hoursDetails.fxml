@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="811.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.HoursDetails">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="285.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER_LEFT" prefHeight="811.0" prefWidth="67.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="316.0" prefWidth="67.0" style="-fx-background-color: #ffffff;" styleClass="rightRadius" stylesheets="@search-box.css">
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <Hyperlink onAction="#infoLinkOnAction" prefHeight="26.0" prefWidth="26.0" styleClass="linkBack3" stylesheets="@linkStyle.css" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox alignment="TOP_CENTER" prefWidth="600.0" style="-fx-background-color: #999999;" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <top>
+                  <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" styleClass="downRadius" stylesheets="@search-box.css" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="71.0" prefWidth="621.0" style="-fx-background-color: #999999;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#submitButtonOnAction" styleClass="search-button" stylesheets="@search-box.css" text="Submit">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="86.0" prefWidth="621.0">
+                           <children>
+                              <Label text="Employee Id ">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="86.0" prefWidth="291.0">
+                                 <children>
+                                    <Label fx:id="employeeIdMessage" alignment="CENTER" prefHeight="34.0" prefWidth="286.0">
+                                       <VBox.margin>
+                                          <Insets bottom="5.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="employeeId" alignment="CENTER" prefHeight="34.0" prefWidth="291.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="140.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="289.0">
+                                 <children>
+                                    <Label fx:id="checkBoxMessage" prefHeight="27.0" prefWidth="260.0">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="fullDay" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Full Day">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="halfDay" layoutX="30.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Half Day">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="289.0">
+                                 <children>
+                                    <CheckBox fx:id="absent" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Absent">
+                                       <VBox.margin>
+                                          <Insets left="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </CheckBox>
+                                    <CheckBox fx:id="paidDayOff" layoutX="30.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Paid Off Day">
+                                       <VBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="15.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="140.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="96.0" prefHeight="213.0" prefWidth="621.0">
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="214.0" prefWidth="246.0">
+                                 <children>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="124.0" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Hours ">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="175.0">
+                                             <children>
+                                                <Label fx:id="hoursMessage" alignment="CENTER" prefHeight="23.0" prefWidth="172.0" />
+                                                <TextField fx:id="hours" alignment="CENTER" prefHeight="29.0" prefWidth="161.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                                   <VBox.margin>
+                                                      <Insets left="10.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="124.0" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="19.0" prefWidth="66.0" text="Minutes">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="157.0">
+                                             <children>
+                                                <Label fx:id="minutesMessage" alignment="CENTER" prefHeight="23.0" prefWidth="172.0" />
+                                                <TextField fx:id="minutes" alignment="CENTER" prefHeight="29.0" prefWidth="148.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="214.0" prefWidth="356.0">
+                                 <children>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="124.0" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="Overtime Hours">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="190.0">
+                                             <children>
+                                                <Label fx:id="overTimeHoursMessage" alignment="CENTER" prefHeight="23.0" prefWidth="172.0" />
+                                                <TextField fx:id="overTimeHours" alignment="CENTER" prefHeight="29.0" prefWidth="176.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                                   <VBox.margin>
+                                                      <Insets left="15.0" right="5.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </VBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="20.0" prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label prefHeight="19.0" prefWidth="138.0" text="Overtime Minutes">
+                                             <font>
+                                                <Font size="15.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="20.0" />
+                                             </HBox.margin>
+                                          </Label>
+                                          <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="175.0">
+                                             <children>
+                                                <Label fx:id="overTimeMinutesMessage1" alignment="CENTER" prefHeight="23.0" prefWidth="172.0" />
+                                                <TextField fx:id="overTimeMinutes" alignment="CENTER" prefHeight="29.0" prefWidth="175.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                                   <VBox.margin>
+                                                      <Insets left="5.0" />
+                                                   </VBox.margin>
+                                                </TextField>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets left="140.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="196.0" prefWidth="600.0" />
+                        <HBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="296.0" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="submitMessage" prefHeight="39.0" prefWidth="381.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

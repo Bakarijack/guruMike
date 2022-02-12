@@ -1,0 +1,5 @@
+.in{
+    -fx-background-image: url(in.jpg);
+    -fx-background-radius: 10px;
+    -fx-background-size: cover;
+}

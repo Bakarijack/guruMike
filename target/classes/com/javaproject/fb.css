@@ -1,0 +1,5 @@
+.fb{
+    -fx-background-image: url(fb.jpg);
+    -fx-background-radius: 10px;
+    -fx-background-size: cover;
+}

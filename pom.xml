@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.test</groupId>
-    <artifactId>TestFx</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>JavaProject</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>TestFx</name>
+    <name>JavaProject</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.test.testfx/com.test.testfx.Main</mainClass>
+                            <mainClass>com.example.javaproject/com.javaproject.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>

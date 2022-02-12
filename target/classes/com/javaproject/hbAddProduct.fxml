@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="775.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.HbAddProduct">
+   <children>
+      <BorderPane layoutX="137.0" layoutY="99.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Brooder's Product" underline="true">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="144.0" text="Poultry Code">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="342.0">
+                           <children>
+                              <Label fx:id="poultryCodeMessage" prefHeight="34.0" prefWidth="341.0">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="poultryCode" alignment="CENTER" prefHeight="44.0" prefWidth="342.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="144.0" text="Product Name">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="342.0">
+                           <children>
+                              <Label fx:id="productNameMessage" prefHeight="34.0" prefWidth="341.0">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="productName" alignment="CENTER" prefHeight="44.0" prefWidth="342.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="144.0" text="Product Code">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="342.0">
+                           <children>
+                              <Label fx:id="productCodeMessage" prefHeight="34.0" prefWidth="341.0">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="productCode" alignment="CENTER" prefHeight="44.0" prefWidth="342.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="210.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="144.0" text="Quantity">
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="342.0">
+                           <children>
+                              <Label fx:id="pQuantityMessage" prefHeight="34.0" prefWidth="341.0">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="pQuantity" alignment="CENTER" prefHeight="44.0" prefWidth="342.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="addMessage" alignment="CENTER" prefHeight="39.0" prefWidth="401.0">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="81.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="35.0" prefWidth="84.0" styleClass="search-button" stylesheets="@search-box.css" text="Add">
+                     <HBox.margin>
+                        <Insets right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children></HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

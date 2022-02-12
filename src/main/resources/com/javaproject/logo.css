@@ -1,0 +1,4 @@
+.logo{
+    -fx-background-image: url(egg.jpg);
+    -fx-background-size: cover;
+}

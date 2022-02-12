@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="810.0" prefWidth="1124.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.OfficeSupervisorOthers">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="161.0" layoutY="123.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="196.0" prefWidth="1124.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="185.0" fitWidth="253.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@pSetting.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="BOTTOM_LEFT" prefHeight="196.0" prefWidth="374.0">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <children>
+                        <Label prefHeight="68.0" prefWidth="374.0" text="Business" textFill="#390caa">
+                           <font>
+                              <Font name="FreeSerif Bold" size="40.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="174.0" prefHeight="32.0" prefWidth="374.0" text="is the art of ">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="174.0" prefHeight="32.0" prefWidth="374.0" text="extracting money">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="174.0" prefHeight="32.0" prefWidth="374.0" text="form another man's pocket">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="174.0" prefHeight="32.0" prefWidth="374.0" text="without resorting to violence">
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="614.0" prefWidth="192.0" style="-fx-background-color: #F0F8FF;" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink onAction="#priceLinkOnAction" stylesheets="@linkStyle.css" text="Prices">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Hyperlink layoutX="70.0" layoutY="30.0" onAction="#expenditureLinkOnAction" stylesheets="@linkStyle.css" text="Expenditures">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+               </children>
+               <padding>
+                  <Insets left="60.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="back2" stylesheets="@style.css" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

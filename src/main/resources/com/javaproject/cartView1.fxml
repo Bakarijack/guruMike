@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1400.0" prefWidth="2600.0" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.CartView1">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="141.0" prefWidth="390.0" styleClass="right-bar" stylesheets="@search-box.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="16.0" prefWidth="390.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="371.0" stylesheets="@search-box.css">
+                     <children>
+                        <TextField prefHeight="47.0" prefWidth="269.0" promptText="       Type here to search" styleClass="transparent" stylesheets="@search-box.css">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="92.0" styleClass="search-button" stylesheets="@search-box.css" text="Search">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER" prefHeight="136.0" prefWidth="2602.0" styleClass="right-bar" stylesheets="@search-box.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink alignment="BASELINE_CENTER" onAction="#mainLinkOnAction" prefHeight="42.0" prefWidth="125.0" text="Home">
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="10.0" layoutY="67.0" onAction="#accountLinkOnAction" prefHeight="42.0" prefWidth="118.0" text="Accounts">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="81.0" layoutY="67.0" onAction="#orderLinkOnAction" prefHeight="42.0" prefWidth="132.0" text="Order">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="151.0" layoutY="67.0" onAction="#profileLinkOnAction" prefHeight="42.0" prefWidth="129.0" text="My Profile">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="222.0" layoutY="67.0" onAction="#helpLinkOnAction" prefHeight="42.0" prefWidth="147.0" text="Help">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="1163.0" fitWidth="1999.0" layoutX="127.0" layoutY="468.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="111.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@home.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

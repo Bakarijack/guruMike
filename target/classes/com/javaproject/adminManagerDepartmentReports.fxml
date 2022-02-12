@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="948.0" prefWidth="2063.0" style="-fx-background-color: #faebd7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.AdminManagerDepartmentReports">
+   <children>
+      <BorderPane fx:id="mainPane" layoutX="331.0" layoutY="359.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="245.0" prefWidth="2064.0" style="-fx-background-color: #faebd7;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="245.0" prefWidth="245.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="245.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" styleClass="leftRadius" stylesheets="@search-box.css">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="10.0" />
+                           </HBox.margin>
+                           <children>
+                              <Hyperlink fx:id="leftArrow" onAction="#linkArrowsOnAction" prefHeight="59.0" prefWidth="57.0">
+                                 <stylesheets>
+                                    <URL value="@style.css" />
+                                    <URL value="@linkStyle.css" />
+                                 </stylesheets>
+                                 <styleClass>
+                                    <String fx:value="back12" />
+                                    <String fx:value="arrowLinks" />
+                                 </styleClass>
+                              </Hyperlink>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="245.0" prefWidth="1794.0">
+                     <children>
+                        <ScrollPane fx:id="scrollPane" prefHeight="245.0" prefWidth="1551.0">
+                           <content>
+                              <HBox alignment="CENTER_LEFT" prefHeight="217.0" prefWidth="1869.0">
+                                 <children>
+                                    <HBox alignment="CENTER" prefHeight="225.0" prefWidth="450.0" style="-fx-background-color: #fffafa;" styleClass="radiuses" stylesheets="@search-box.css">
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Hyperlink alignment="CENTER" onAction="#officeDepartmentOnAction" prefHeight="225.0" prefWidth="450.0" styleClass="dep" stylesheets="@linkStyle.css" text="    Office Department">
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets left="30.0" />
+                                             </padding>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" layoutX="10.0" layoutY="15.0" prefHeight="225.0" prefWidth="450.0" style="-fx-background-color: #fffafa;" styleClass="radiuses" stylesheets="@search-box.css">
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Hyperlink alignment="CENTER" onAction="#brooderDepartmentOnAction" prefHeight="225.0" prefWidth="450.0" styleClass="dep" stylesheets="@linkStyle.css" text="  Brooder Department">
+                                             <padding>
+                                                <Insets left="30.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="411.0" layoutY="10.0" prefHeight="225.0" prefWidth="450.0" style="-fx-background-color: #fffafa;" styleClass="radiuses" stylesheets="@search-box.css">
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Hyperlink alignment="CENTER" onAction="#packingDepartmentOnAction" prefHeight="225.0" prefWidth="450.0" styleClass="dep" stylesheets="@linkStyle.css" text="  Packing Department">
+                                             <padding>
+                                                <Insets left="30.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="930.0" layoutY="15.0" prefHeight="225.0" prefWidth="450.0" style="-fx-background-color: #fffafa;" styleClass="radiuses" stylesheets="@search-box.css">
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Hyperlink alignment="CENTER" onAction="#productionDepartmentOnAction" prefHeight="225.0" prefWidth="450.0" styleClass="dep" stylesheets="@linkStyle.css" text="  Production Department">
+                                             <padding>
+                                                <Insets left="30.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                    <HBox layoutX="1390.0" layoutY="15.0" prefHeight="225.0" prefWidth="450.0" style="-fx-background-color: #fffafa;" styleClass="radiuses" stylesheets="@search-box.css">
+                                       <HBox.margin>
+                                          <Insets right="10.0" top="5.0" />
+                                       </HBox.margin>
+                                       <children>
+                                          <Hyperlink alignment="CENTER" onAction="#logisticDepartmentOnAction" prefHeight="225.0" prefWidth="450.0" styleClass="dep" stylesheets="@linkStyle.css" text="  Logistic Department">
+                                             <padding>
+                                                <Insets left="30.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                             </font>
+                                          </Hyperlink>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </HBox>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                        <HBox alignment="CENTER_LEFT" prefHeight="245.0" prefWidth="245.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="245.0" prefWidth="69.0" style="-fx-background-color: #ffffff;" styleClass="rightRadius" stylesheets="@search-box.css">
+                                 <children>
+                                    <Hyperlink fx:id="rightArrow" onAction="#linkArrowsOnAction" prefHeight="59.0" prefWidth="57.0">
+                                       <stylesheets>
+                                          <URL value="@style.css" />
+                                          <URL value="@linkStyle.css" />
+                                       </stylesheets>
+                                       <styleClass>
+                                          <String fx:value="back11" />
+                                          <String fx:value="arrowLinks" />
+                                       </styleClass>
+                                    </Hyperlink>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets right="10.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <AnchorPane prefHeight="697.0" prefWidth="1241.0">
+                     <children>
+                        <VBox layoutX="67.0" layoutY="34.0" prefHeight="480.0" prefWidth="929.0" styleClass="back14" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0" />
+                        <BorderPane layoutX="823.0" layoutY="407.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <right>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Circle fill="#ff1f269c" radius="21.0" stroke="BLACK" strokeType="INSIDE" />
+                                    <Circle fill="#ff1f269c" layoutX="60.0" layoutY="359.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Circle>
+                                    <Circle fill="#ff1f269c" layoutX="60.0" layoutY="380.0" radius="21.0" stroke="BLACK" strokeType="INSIDE">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Circle>
+                                 </children>
+                              </VBox>
+                           </right>
+                           <bottom>
+                              <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </center>
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="704.0" prefWidth="782.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="10.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <PieChart fx:id="piechartDisplay" prefHeight="701.0" prefWidth="782.0" title="Total Workes" />
+               </children>
+            </VBox>
+         </right>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

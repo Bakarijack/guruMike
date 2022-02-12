@@ -1,9 +1,11 @@
-module com.test.testfx {
+module com.example.javaproject {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires mysql.connector.java;
+    requires itextpdf;
 
 
-    opens com.test.testfx to javafx.fxml;
-    exports com.test.testfx;
+    opens com.javaproject to javafx.fxml;
+    exports com.javaproject;
 }

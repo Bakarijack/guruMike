@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="844.0" prefWidth="1162.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.OfficeWorkerRecruit">
+   <children>
+      <VBox layoutX="830.0" layoutY="-1.0" prefHeight="844.0" prefWidth="331.0" style="-fx-background-color: #8b4513;" styleClass="leftRadius2" stylesheets="@search-box.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane layoutX="153.0" layoutY="153.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow spread="0.5">
+                     <color>
+                        <Color red="0.6842100620269775" green="0.6380527019500732" blue="0.6380527019500732" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="962.0">
+                     <children>
+                        <Label text="Employee Details">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="94.0" prefWidth="962.0">
+                     <children>
+                        <Label text="First Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="firstnameMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstname" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label layoutX="50.0" layoutY="83.0" text="Second Name">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="154.0" layoutY="10.0" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="secondNameMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="secondName" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="91.0" prefHeight="94.0" prefWidth="962.0">
+                     <children>
+                        <Label text="Location">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="locationMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="locationName" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label layoutX="50.0" layoutY="83.0" text="email  Address">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="154.0" layoutY="10.0" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="emailMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="email" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="186.0" prefHeight="94.0" prefWidth="962.0">
+                     <children>
+                        <Label text="Phone No.">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="phoneNumberMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="phoneNumber" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="280.0" prefHeight="94.0" prefWidth="962.0">
+                     <children>
+                        <Label text="Username">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="usernameMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="username" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label layoutX="50.0" layoutY="83.0" text="Password">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="154.0" layoutY="10.0" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="passwordMessage" alignment="CENTER" prefHeight="33.0" prefWidth="219.0" textFill="#dc0d0d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="password" alignment="CENTER" prefHeight="36.0" prefWidth="220.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="50.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="374.0" prefHeight="117.0" prefWidth="962.0">
+                     <children>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="94.0" prefWidth="220.0">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                           <children>
+                              <Label fx:id="genderMessage" alignment="CENTER" prefHeight="26.0" prefWidth="214.0" textFill="#dc0d0d" />
+                              <CheckBox fx:id="maleBox" mnemonicParsing="false" onAction="#genderBoxInAction" text="   Male">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="femaleBox" layoutX="10.0" layoutY="84.0" mnemonicParsing="false" onAction="#genderBoxInAction" text="   Female">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_LEFT" layoutX="95.0" layoutY="10.0" prefHeight="94.0" prefWidth="220.0">
+                           <children>
+                              <Label fx:id="roleMessage" alignment="CENTER" prefHeight="26.0" prefWidth="214.0" textFill="#dc0d0d" />
+                              <CheckBox fx:id="supervisor" mnemonicParsing="false" onAction="#roleBoxInAction" text="  Sepervisor">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="normalWorker" layoutX="10.0" layoutY="84.0" mnemonicParsing="false" onAction="#roleBoxInAction" text="   Normal Worker">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="30.0" />
+                                 </VBox.margin>
+                              </CheckBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="40.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label fx:id="recruitMessage" alignment="CENTER" prefHeight="36.0" prefWidth="396.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="80.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#recruitOnAction" styleClass="search-button" stylesheets="@search-box.css" text="Recruit">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="60.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+         <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

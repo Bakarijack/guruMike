@@ -1,0 +1,5 @@
+.twiter{
+    -fx-background-image: url(twiter.jpg);
+    -fx-background-radius:10px;
+    -fx-background-size: cover;
+}

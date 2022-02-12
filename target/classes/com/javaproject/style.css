@@ -1,0 +1,74 @@
+.back{
+    -fx-background-image: url(realback.jpg);
+    -fx-background-size: cover;
+}
+
+.back2{
+    -fx-background-image: url(cartEgg.jpg);
+    -fx-background-size: cover;
+}
+
+.back3{
+    -fx-background-image: url(shutterstock_563262712.jpg);
+    -fx-background-size: cover;
+}
+
+.back4{
+    -fx-background-image: url(blue-line-vector-background-vector-id1148344310.jpeg);
+    -fx-background-size: cover;
+    -fx-background-radius: 30px;
+}
+.back5{
+    -fx-background-image: url(12.jpeg);
+    -fx-background-size: cover;
+    -fx-background-radius: 30px;
+}
+
+.back10{
+    -fx-background-image: url(B-letter-logo-butterfly-Graphics-3492045-1-1-580x387.jpg);
+    -fx-background-size: cover;
+}
+
+.back11{
+    -fx-background-image: url(leftArrow.png);
+    -fx-background-size: cover;
+}
+
+.back12{
+    -fx-background-image: url(rightArrow.jpg);
+    -fx-background-size: cover;
+}
+
+.back13{
+    -fx-background-image: url(photo-1596079890744-c1a0462d0975.jpeg);
+    -fx-background-size: cover;
+}
+
+.back14{
+    -fx-background-image: url(home-hero-Image-Department-Digital-Branding-Agency.png);
+    -fx-background-size: cover;
+}
+
+.back6{
+    -fx-background-image: url(5d6a0ebbdb6b3ccd82d8f46198541081--quail-eggs-quails.jpg);
+    -fx-background-size: cover;
+}
+
+.back7{
+    -fx-background-image: url(spiderweb-eggs-A103218_horiz.jpg);
+    -fx-background-size: cover;
+}
+
+.back8{
+    -fx-background-image: url(Graph-of-industrial-production-CPI-personal-income-and-wages-during-the-Great.png);
+    -fx-background-size: cover;
+}
+
+.back9{
+    -fx-background-image: url(2.1.1_figure3_1.png);
+    -fx-background-size: cover;
+}
+.backStyle{
+    -fx-background-image: url(orders_over_time_cohort.png);
+    -fx-background-size: cover;
+}

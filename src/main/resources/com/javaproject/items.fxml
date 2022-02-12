@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="394.0" prefWidth="325.0" styleClass="egg-item" stylesheets="@search-box.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.ItemsController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-3.0" prefHeight="400.0" prefWidth="325.0" styleClass="egg-item" stylesheets="@search-box.css" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+         <children>
+            <HBox prefHeight="77.0" prefWidth="272.0">
+               <children>
+                  <Label fx:id="itemName" alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="110.0" text="White Eggs">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="itemPrice" prefHeight="77.0" prefWidth="87.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="88.0" text="   per Tray:  ">
+                           <font>
+                              <Font name="System Italic" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="77.0" prefWidth="82.0">
+                     <children>
+                        <Label fx:id="forprice2" alignment="CENTER" layoutX="33.0" layoutY="41.0" prefHeight="34.0" prefWidth="74.0" text="300" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="itemImage" fitHeight="170.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@4.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1400.0" prefWidth="2600.0" styleClass="back" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.AdministrationManager">
+   <children>
+      <BorderPane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="141.0" prefWidth="390.0" styleClass="right-bar" stylesheets="@search-box.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="16.0" prefWidth="390.0" />
+                  <HBox alignment="CENTER_LEFT" prefHeight="77.0" prefWidth="371.0" stylesheets="@search-box.css">
+                     <children>
+                        <TextField prefHeight="47.0" prefWidth="269.0" promptText="       Type here to search" styleClass="transparent" stylesheets="@search-box.css">
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="92.0" styleClass="search-button" stylesheets="@search-box.css" text="Search">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </VBox.margin>
+                     <styleClass>
+                        <String fx:value="search-box" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </HBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="804.0" prefWidth="390.0">
+                     <VBox.margin>
+                        <Insets top="40.0" />
+                     </VBox.margin>
+                     <children>
+                        <Hyperlink onAction="#departmentsReportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Departments">
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Hyperlink>
+                        <Hyperlink fx:id="payrolLink" layoutX="100.0" layoutY="40.0" onAction="#payrollSystemReportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Payroll System">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="129.0" onAction="#invoiceReportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Invoices">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="187.0" onAction="#workersReportsLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Workers">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="246.0" onAction="#cutomerseportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Customers">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="304.0" onAction="#productionReportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Production Reports">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="363.0" onAction="#deliveryReportLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Delivery Reports">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                        <Hyperlink layoutX="100.0" layoutY="421.0" onAction="#otherLinkOnAction" prefHeight="58.0" prefWidth="210.0" stylesheets="@linkStyle.css" text="Others">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets bottom="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </left>
+         <top>
+            <HBox alignment="CENTER_RIGHT" prefHeight="136.0" prefWidth="2602.0" styleClass="right-bar" stylesheets="@search-box.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Hyperlink alignment="BASELINE_CENTER" onAction="#mainLinkOnAction" prefHeight="42.0" prefWidth="125.0" stylesheets="@linkStyle.css" text="Home">
+                     <HBox.margin>
+                        <Insets left="60.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="10.0" layoutY="67.0" onAction="#accountLinkOnAction" prefHeight="42.0" prefWidth="118.0" stylesheets="@linkStyle.css" text="Accounts">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="81.0" layoutY="67.0" onAction="#scheduleLinkOnAction" prefHeight="42.0" prefWidth="132.0" stylesheets="@linkStyle.css" text="Schedule">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="151.0" layoutY="67.0" onAction="#profileLinkOnAction" prefHeight="42.0" prefWidth="129.0" stylesheets="@linkStyle.css" text="My Profile">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <Hyperlink alignment="BASELINE_CENTER" layoutX="222.0" layoutY="67.0" onAction="#helpLinkOnAction" prefHeight="42.0" prefWidth="147.0" stylesheets="@linkStyle.css" text="Help">
+                     <HBox.margin>
+                        <Insets left="20.0" right="60.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Hyperlink>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="136.0" prefWidth="621.0" styleClass="right-bar" stylesheets="@search-box.css">
+                     <children>
+                        <Hyperlink fx:id="logout" onAction="#linkOnAction" prefHeight="35.0" prefWidth="86.0" stylesheets="@linkStyle.css" text="Log Out">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                           </font></Hyperlink>
+                     </children>
+                     <padding>
+                        <Insets right="80.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </HBox>
+         </top>
+         <right>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <left>
+                  <VBox alignment="TOP_CENTER" prefHeight="1164.0" prefWidth="924.0" style="-fx-background-color: #ffffff;" styleClass="back6" stylesheets="@style.css" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </left>
+               <center>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="351.0" prefWidth="699.0" style="-fx-background-color: #d9d9d9;" styleClass="radiuses" stylesheets="@search-box.css">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="666.0">
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                                 <children>
+                                    <VBox alignment="CENTER_RIGHT" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <Label text="W">
+                                             <font>
+                                                <Font size="100.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="136.0" prefWidth="309.0">
+                                       <children>
+                                          <Label text="elcome">
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="35.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="56.0" text=" to ADM Services" underline="true">
+                                             <font>
+                                                <Font name="DejaVu Serif Condensed Bold" size="35.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label fx:id="label1" prefHeight="36.0" prefWidth="486.0">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="50.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="label2" layoutX="100.0" layoutY="10.0" prefHeight="36.0" prefWidth="486.0" text="&quot;Leadership is unlocking people's potential" textFill="#2a277a">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="70.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="label3" alignment="CENTER" layoutX="80.0" layoutY="46.0" prefHeight="36.0" prefWidth="486.0" text="to become better&quot;" textFill="#2a277a">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets left="90.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="812.0" prefWidth="699.0" style="-fx-background-color: #ffffff;" styleClass="radiuses" stylesheets="@search-box.css">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </VBox>
+               </center>
+               <right>
+                  <VBox alignment="TOP_CENTER" prefHeight="1164.0" prefWidth="486.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <VBox prefHeight="810.0" prefWidth="486.0" style="-fx-background-color: #ffffff;" styleClass="radiuses" stylesheets="@search-box.css">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                        <VBox prefHeight="356.0" prefWidth="486.0" style="-fx-background-color: #ffffff;" styleClass="radiuses" stylesheets="@search-box.css">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets left="5.0" />
+                     </BorderPane.margin>
+                  </VBox>
+               </right>
+               <padding>
+                  <Insets left="10.0" top="10.0" />
+               </padding>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

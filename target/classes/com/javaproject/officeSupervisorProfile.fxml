@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="948.0" prefWidth="2063.0" style="-fx-background-color: #FFE4C4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.OfficeSupervisorProfile">
+   <children>
+      <BorderPane layoutX="207.0" layoutY="194.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="787.0" prefWidth="580.0" style="-fx-background-color: #FFFFFF;" stylesheets="@search-box.css">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="580.0" />
+                        <HBox alignment="CENTER" prefHeight="292.0" prefWidth="580.0">
+                           <children>
+                              <ImageView fitHeight="262.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@149071.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="466.0" prefWidth="580.0" styleClass="back4" stylesheets="@style.css">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="31.0" prefWidth="351.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets right="40.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@219-2191012_icon-setting-android-hd-png-download.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="85.0" prefWidth="351.0">
+                                 <children>
+                                    <Label fx:id="userName" alignment="CENTER" prefHeight="42.0" prefWidth="354.0">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="32.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="123.0" prefWidth="351.0" />
+                     </children>
+                     <styleClass>
+                        <String fx:value="add-btn" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets bottom="80.0" left="10.0" right="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="TOP_CENTER" prefHeight="812.0" prefWidth="580.0" style="-fx-background-color: #FFFFFF;" stylesheets="@search-box.css">
+                     <children>
+                        <HBox prefHeight="84.0" prefWidth="361.0" />
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="119.0" prefWidth="361.0" styleClass="back5" stylesheets="@style.css" />
+                        <VBox alignment="TOP_CENTER" prefHeight="559.0" prefWidth="580.0" styleClass="back4" stylesheets="@style.css">
+                           <children>
+                              <HBox prefHeight="24.0" prefWidth="361.0" />
+                              <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="361.0">
+                                 <children>
+                                    <Label prefHeight="20.0" prefWidth="130.0" text="Job Role  : " textFill="#2f07cb">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="jobRole" prefHeight="30.0" prefWidth="215.0">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="120.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="52.0" prefWidth="361.0">
+                                 <children>
+                                    <Label prefHeight="25.0" prefWidth="156.0" text="Employee No.  " textFill="#2f07cb">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="employeeNumber" prefHeight="30.0" prefWidth="231.0">
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="120.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="49.0" prefWidth="361.0">
+                                 <children>
+                                    <Label prefHeight="20.0" prefWidth="130.0" text="Phone No." textFill="#2f07cb">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="phoneNumber" prefHeight="30.0" prefWidth="213.0">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="120.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="361.0">
+                                 <children>
+                                    <Label prefHeight="20.0" prefWidth="130.0" text="Email" textFill="#2f07cb">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="emailAddress" prefHeight="30.0" prefWidth="247.0">
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets left="120.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="add-btn" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="40.0" right="40.0" top="80.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="722.0" prefWidth="580.0" style="-fx-background-color: #FFFFFF;" stylesheets="@search-box.css">
+                     <children>
+                        <HBox alignment="BOTTOM_CENTER" prefHeight="94.0" prefWidth="371.0">
+                           <children>
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" startX="-100.0" />
+                           </children>
+                        </HBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="668.0" prefWidth="580.0" styleClass="back4" stylesheets="@style.css">
+                           <children>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="71.0" prefWidth="371.0">
+                                 <children>
+                                    <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets right="50.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@136-1364536_clipboard-verification-symbol-request-a-quote-icon-hd.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <VBox alignment="TOP_CENTER" prefHeight="256.0" prefWidth="371.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" prefHeight="55.0" prefWidth="276.0" text="&quot; We ">
+                                       <font>
+                                          <Font name="DejaVu Serif Condensed Bold" size="45.0" />
+                                       </font>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="87.0" layoutY="10.0" prefHeight="24.0" prefWidth="239.0" text="Continue to shape">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="40.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" layoutX="87.0" layoutY="34.0" prefHeight="24.0" prefWidth="256.0" text="Our personality all our ">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="40.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label layoutX="87.0" layoutY="59.0" prefHeight="24.0" prefWidth="276.0" text="Life &quot;">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                       <padding>
+                                          <Insets right="40.0" />
+                                       </padding>
+                                    </Label>
+                                    <HBox alignment="CENTER_RIGHT" prefHeight="69.0" prefWidth="371.0">
+                                       <children>
+                                          <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true">
+                                             <HBox.margin>
+                                                <Insets right="50.0" />
+                                             </HBox.margin>
+                                             <image>
+                                                <Image url="@notification.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" startX="-100.0" />
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" layoutX="197.0" layoutY="339.0" startX="-100.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" layoutX="197.0" layoutY="361.0" startX="-100.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" layoutX="197.0" layoutY="383.0" startX="-100.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Line endX="305.85736083984375" endY="0.2933167517185211" layoutX="197.0" layoutY="405.0" startX="-100.0">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Line>
+                           </children>
+                        </VBox>
+                     </children>
+                     <styleClass>
+                        <String fx:value="add-btn" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets bottom="80.0" left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </center>
+         <left>
+            <HBox prefHeight="812.0" prefWidth="3.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <HBox prefHeight="812.0" prefWidth="4.0" BorderPane.alignment="CENTER" />
+         </right>
+         <bottom>
+            <HBox prefHeight="0.0" prefWidth="1124.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <top>
+            <HBox prefHeight="0.0" prefWidth="1124.0" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

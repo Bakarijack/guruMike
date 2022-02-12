@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="712.0" prefWidth="1079.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.PaneAbout">
+   <children>
+      <BorderPane layoutX="182.0" layoutY="149.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox alignment="CENTER" opacity="0.7" prefHeight="712.0" prefWidth="544.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="50.0" layoutY="513.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="481.0" prefHeight="31.0" prefWidth="505.0" text="Services">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="136.0" prefHeight="31.0" prefWidth="505.0" text="With 4+years of experience building 70+ software">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="293.0" prefHeight="31.0" prefWidth="505.0" text="platforms, we're the experts in desinging and">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="324.0" prefHeight="31.0" prefWidth="505.0" text="developing technology products that help your">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="356.0" prefHeight="31.0" prefWidth="505.0" text="business streamline processes and grow its revenue.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="387.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="419.0" prefHeight="31.0" prefWidth="505.0" text="We build custome software applicatins that are ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="450.0" prefHeight="31.0" prefWidth="505.0" text="to meet your specific use case, budget, and timeline.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="184.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="308.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="505.0" text="Software Consulting">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="247.0" prefHeight="31.0" prefWidth="505.0" text="Our software development experts gain a strong">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="326.0" prefHeight="31.0" prefWidth="505.0" text="experience to understand your idea, target users">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="329.0" prefHeight="31.0" prefWidth="505.0" text="and monetization strategies before offering you a">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="331.0" prefHeight="31.0" prefWidth="505.0" text="wide range of software solutions.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="359.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="316.0" prefHeight="31.0" prefWidth="505.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="505.0" text="Custome Software Development">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="334.0" prefHeight="31.0" prefWidth="505.0" text="We convert client requirements int a custome solution">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="316.0" prefHeight="31.0" prefWidth="505.0" text="by focusing on building secure, scalable, and ">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="50.0" layoutY="359.0" prefHeight="31.0" prefWidth="505.0" text="custome-centric products.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="40.0" right="10.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets right="5.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <VBox alignment="CENTER" opacity="0.7" prefHeight="712.0" prefWidth="577.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="31.0" prefWidth="505.0" text="Enterprice Software Solutions">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="10.0" prefHeight="32.0" prefWidth="485.0" text="We improve business agility and efficiency by">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="42.0" prefHeight="32.0" prefWidth="485.0" text="cutting-edge mobile and web software solutions for">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="74.0" prefHeight="32.0" prefWidth="485.0" text="enterprises.">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="145.0" prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="435.0" prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="243.0" prefWidth="431.0">
+                     <children>
+                        <ImageView fitHeight="169.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@booTech3.png" />
+                           </image>
+                        </ImageView>
+                        <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Label text="BooTech">
+                                 <font>
+                                    <Font name="DejaVu Serif Condensed Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="31.0" layoutY="63.0" text="Company">
+                                 <font>
+                                    <Font name="FreeSans" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <Label prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="452.0" prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="461.0" prefHeight="32.0" prefWidth="485.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" right="40.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets left="5.0" right="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <top>
+            <HBox prefHeight="224.0" prefWidth="1079.0" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <HBox prefHeight="139.0" prefWidth="1079.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

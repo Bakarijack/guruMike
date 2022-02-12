@@ -1,0 +1,65 @@
+.hyperlink:hover{
+    -fx-text-fill: #0000ff;
+    -fx-underline: false;
+}
+.hyperlink{
+    -fx-text-fill: #000000;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.arrowLinks{
+    -fx-underline: false;
+    -fx-border-color: transparent;
+
+}
+
+.dep:hover{
+    -fx-text-fill: #000000;
+    -fx-underline: false;
+}
+
+.dep{
+    -fx-text-fill: #000000;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+
+.arrowLinks:hover{
+    -fx-underline: false;
+    -fx-border-color: transparent;
+}
+
+.payrollLink:hover{
+    -fx-text-fill: #0000ff;
+    -fx-underline: true;
+}
+
+.payrollLink{
+    -fx-text-fill: #ffffff;
+    -fx-underline: false;
+    -fx-border-color: transparent;
+    -fx-padding: 4 0 4 0;
+}
+
+.linkBack1{
+    -fx-background-image: url(212-2129768_svg-black-and-white-download-black-building-symbol.png);
+    -fx-background-size: cover;
+}
+
+.linkBack2{
+    -fx-background-image: url(images_6.png);
+    -fx-background-size: cover;
+}
+
+.linkBack3{
+    -fx-background-image: url(img_519962.png);
+    -fx-background-size: cover;
+}
+
+
+.linkBack4{
+    -fx-background-image: url(images_3.jpeg);
+    -fx-background-size: cover;
+}

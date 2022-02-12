@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="592.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.InvoiceGenerate">
+   <children>
+      <BorderPane layoutX="176.0" layoutY="146.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="Generate Invoice" underline="true">
+                     <font>
+                        <Font name="DejaVu Serif Condensed Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#generateButtonOnAction" prefHeight="54.0" prefWidth="126.0" styleClass="search-button" stylesheets="@search-box.css" text="Generate">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="40.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Order Code">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="311.0">
+                           <children>
+                              <Label fx:id="orderCodeMessage" alignment="CENTER" prefHeight="39.0" prefWidth="311.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="3.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="orderCode" alignment="CENTER" prefHeight="36.0" prefWidth="311.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                           </children>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Line endX="386.292236328125" endY="-7.804141205269843E-5" startX="-100.0" />
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="67.0" prefWidth="647.0">
+                     <children>
+                        <Label text="Terms of Payment" underline="true">
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="211.0" prefWidth="647.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="211.0" prefWidth="338.0">
+                           <children>
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="48.0" prefWidth="324.0">
+                                 <children>
+                                    <CheckBox fx:id="one" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Cash">
+                                       <HBox.margin>
+                                          <Insets left="60.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="324.0">
+                                 <children>
+                                    <CheckBox fx:id="two" mnemonicParsing="false" onAction="#checkBoxOnAction" text="M-Pesa">
+                                       <HBox.margin>
+                                          <Insets left="60.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="59.0" prefHeight="48.0" prefWidth="324.0">
+                                 <children>
+                                    <CheckBox fx:id="three" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Bank Account">
+                                       <HBox.margin>
+                                          <Insets left="60.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="211.0" prefWidth="338.0">
+                           <children>
+                              <HBox alignment="BOTTOM_LEFT" prefHeight="48.0" prefWidth="324.0">
+                                 <children>
+                                    <CheckBox fx:id="four" mnemonicParsing="false" onAction="#checkBoxOnAction" text="Debt">
+                                       <HBox.margin>
+                                          <Insets left="60.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </CheckBox>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="48.0" prefWidth="324.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="1325.0" prefWidth="719.0" style="-fx-background-color: #b3b3b3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.GeneratePaye">
+   <children>
+      <BorderPane layoutX="293.0" layoutY="246.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="281.0" prefWidth="719.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="153.0" prefWidth="720.0">
+                     <children>
+                        <Label text="Generate Monthly Paye">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="56.0" prefWidth="720.0">
+                     <children>
+                        <Label fx:id="message" alignment="CENTER" prefHeight="44.0" prefWidth="584.0">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Month">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="month" alignment="CENTER" prefHeight="41.0" prefWidth="114.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                        <Label layoutX="279.0" layoutY="50.0" text="Year">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="50.0" right="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="year" alignment="CENTER" layoutX="346.0" layoutY="39.0" prefHeight="41.0" prefWidth="114.0" styleClass="radiuses" stylesheets="@search-box.css" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#generateButtonOnAction" styleClass="add-btn" stylesheets="@search-box.css" text="Generate">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

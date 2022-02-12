@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="834.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.PackingMangerWorkersReport">
+   <children>
+      <BorderPane layoutX="145.0" layoutY="75.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="276.0" prefWidth="1191.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="253.0" fitWidth="302.0" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <image>
+                        <Image url="@chart.jpg" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="TOP_CENTER" prefHeight="276.0" prefWidth="950.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="75.0" prefWidth="869.0">
+                           <children>
+                              <Label text="Department Worker's Report" underline="true">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="869.0">
+                           <children>
+                              <Label text="Total Number of Workers : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="0">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="85.0" prefHeight="75.0" prefWidth="869.0">
+                           <children>
+                              <Label text="Workers on Duty : ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label text="0">
+                                 <HBox.margin>
+                                    <Insets left="95.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Line endX="687.43408203125" endY="-1.8638631105422974" startX="-100.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn prefWidth="130.7148775458336" text="Employee ID" />
+                <TableColumn prefWidth="147.85781860351562" text="First Name" />
+                  <TableColumn prefWidth="130.7148775458336" text="Second Name" />
+                  <TableColumn prefWidth="206.429443359375" text="Tel Number" />
+                  <TableColumn prefWidth="343.57293701171875" text="Email Address" />
+                  <TableColumn prefWidth="190.00079345703125" text="Status" />
+              </columns>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="115.0" styleClass="add-btn" stylesheets="@search-box.css" text="View TurnUp">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

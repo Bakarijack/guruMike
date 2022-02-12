@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="807.0" prefWidth="1189.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.InvoiceView">
+   <children>
+      <VBox layoutX="987.0" layoutY="184.0" prefHeight="807.0" prefWidth="306.0" style="-fx-background-color: #1E90FF;" styleClass="leftRadius2" stylesheets="@search-box.css" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <BorderPane layoutX="361.0" layoutY="204.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5338343381881714" green="0.524301290512085" blue="0.524301290512085" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <HBox alignment="CENTER" prefHeight="79.0" prefWidth="989.0">
+                     <children>
+                        <Label text="Print Invoice" textFill="DODGERBLUE">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="30.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                     <children>
+                        <Label text="Invoice Code">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="315.0">
+                           <children>
+                              <Label fx:id="invoiceCodeMessage" alignment="CENTER" prefHeight="34.0" prefWidth="315.0" textFill="#d21313">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="invoiceCode" alignment="CENTER" prefHeight="39.0" prefWidth="315.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="89.0" prefHeight="100.0" prefWidth="200.0">
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                     <children>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="231.0">
+                           <children>
+                              <CheckBox fx:id="sendBox" mnemonicParsing="false" onAction="#selectBoxOnAction" text="  Sent to Email">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <VBox alignment="BOTTOM_CENTER" layoutX="529.0" layoutY="10.0" prefHeight="100.0" prefWidth="231.0">
+                           <children>
+                              <Label fx:id="selectBoxMessage" prefHeight="28.0" prefWidth="219.0" textFill="#e80b0b">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <CheckBox fx:id="dontSendBox" mnemonicParsing="false" onAction="#selectBoxOnAction" text="  Don't send to Email">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="189.0" prefHeight="100.0" prefWidth="200.0">
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                     <children>
+                        <Label text="Reciever Email">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="315.0">
+                           <children>
+                              <Label fx:id="receiverEmailMessage" alignment="CENTER" prefHeight="34.0" prefWidth="315.0" textFill="#d21313">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="recieverEmail" alignment="CENTER" prefHeight="39.0" prefWidth="315.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="289.0" prefHeight="100.0" prefWidth="200.0">
+                     <padding>
+                        <Insets left="200.0" />
+                     </padding>
+                     <children>
+                        <Label text="Sender Email">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="315.0">
+                           <children>
+                              <Label fx:id="senderEmailMessage" alignment="CENTER" prefHeight="34.0" prefWidth="315.0" textFill="#d21313">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="senderEmail" alignment="CENTER" prefHeight="39.0" prefWidth="315.0" promptText="use Bss Email" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <font>
+                                    <Font name="System Italic" size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="56.0" prefWidth="989.0">
+                     <children>
+                        <Label fx:id="printMessage" alignment="CENTER" prefHeight="42.0" prefWidth="494.0">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="10.0" layoutY="489.0" prefHeight="72.0" prefWidth="989.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#printButtonOnAction" prefHeight="33.0" prefWidth="109.0" styleClass="blueBack" stylesheets="@search-box.css" text="Print">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </center>
+         <padding>
+            <Insets bottom="100.0" left="100.0" right="100.0" top="100.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

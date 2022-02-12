@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="1325.0" prefWidth="719.0" style="-fx-background-color: #b3b3b3;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.ApprovePayee">
+   <children>
+      <BorderPane layoutX="268.0" layoutY="169.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="250.0" prefWidth="719.0" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Payee Month">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="316.0">
+                           <children>
+                              <Label fx:id="monthMessage" alignment="CENTER" prefHeight="36.0" prefWidth="316.0" textFill="#dc0c0c">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="month" alignment="CENTER" prefHeight="41.0" prefWidth="316.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="30.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Payee Year">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="316.0">
+                           <children>
+                              <Label fx:id="yearMessage" alignment="CENTER" prefHeight="36.0" prefWidth="316.0" textFill="#dc0c0c">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="year" alignment="CENTER" prefHeight="41.0" prefWidth="316.0" styleClass="radiuses" stylesheets="@search-box.css">
+                                 <VBox.margin>
+                                    <Insets left="10.0" right="30.0" />
+                                 </VBox.margin>
+                              </TextField>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="100.0" />
+                     </padding>
+                     <children>
+                        <Label fx:id="buttonMessage" prefHeight="42.0" prefWidth="494.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#approveButtonOnAction" prefHeight="33.0" prefWidth="104.0" styleClass="add-btn" stylesheets="@search-box.css" text="Approve">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

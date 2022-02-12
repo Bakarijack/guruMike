@@ -1,0 +1,104 @@
+.search-box{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100px;
+}
+
+.transparent{
+    -fx-background-color: rgba(0, 0, 0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30px;
+}
+
+.search-button2{
+    -fx-background-color: #1e90ff;
+    -fx-background-radius: 10px;
+}
+
+.bcolor{
+    -fx-border-color: #828282;
+    -fx-background-radius: 10px;
+    -fx-border-width: 2px;
+}
+
+.blueBack{
+    -fx-background-color: #1E90FF;
+    -fx-background-radius: 30px;
+}
+
+.backColor{
+    -fx-background-color: transparent;
+    -fx-opacity: 0.2;
+}
+
+.leftCornerRadius{
+    -fx-border-radius: 20 0 0 0;
+    -fx-background-radius: 20 0 0 0;
+}
+
+.upRadius{
+    -fx-border-radius: 20 20 0 0;
+    -fx-background-radius: 20 20 0 0;
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.login{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30px;
+}
+
+.radiuses{
+    -fx-background-radius: 30px;
+}
+
+.rightRadius{
+    -fx-border-radius: 0 20 20 0;
+    -fx-background-radius: 0 20 20 0;
+}
+
+.downRadius{
+    -fx-border-radius: 0 0 20 20;
+    -fx-background-radius: 0 0 20 20;
+}
+
+.leftRadius{
+    -fx-border-radius: 20 0 0 20;
+    -fx-background-radius: 20 0 0 20;
+}
+
+.leftRadius2{
+    -fx-border-radius: 350 0 0 350;
+    -fx-background-radius: 350 0 0 350;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+
+.shadow2{
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.3),10.0,0.0,0.0,10.0);
+}
+.chosen-egg-card{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 30px;
+}
+
+.combo-box{
+    -fx-background-color: rgba(255, 255, 255,0.1);
+    -fx-background-radius: 30px;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100px
+}
+
+.egg-item{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30px;
+}

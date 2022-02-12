@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="671.0" prefWidth="1082.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javaproject.OfficeWorkerOrder">
+   <children>
+      <BorderPane layoutX="77.0" layoutY="74.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox alignment="TOP_CENTER" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="86.0" prefWidth="361.0" />
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="311.0" prefWidth="512.0" styleClass="backStyle" stylesheets="@style.css" />
+                  <HBox alignment="CENTER" prefHeight="81.0" prefWidth="361.0">
+                     <children>
+                        <Label text="Orders Statisics">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="298.0" prefWidth="361.0" />
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <BorderPane BorderPane.alignment="CENTER">
+               <top>
+                  <HBox alignment="CENTER" prefHeight="69.0" prefWidth="721.0" style="-fx-background-color: #F0FFFF;" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label text="Current Orders" underline="true">
+                           <font>
+                              <Font name="DejaVu Serif Condensed Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </top>
+               <bottom>
+                  <HBox alignment="CENTER" prefHeight="73.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#invoiceButtonOnAction" prefHeight="34.0" prefWidth="108.0" styleClass="search-button" stylesheets="@search-box.css" text="Invoice">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="236.0" layoutY="30.0" mnemonicParsing="false" onAction="#reviseOrderButtonOnAction" prefHeight="34.0" prefWidth="108.0" styleClass="search-button" stylesheets="@search-box.css" text="Revise">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <TableView fx:id="orderTable" editable="true" BorderPane.alignment="CENTER">
+                     <columns>
+                        <TableColumn fx:id="orderCode" prefWidth="90.0003992319107" text="Order Code" />
+                        <TableColumn fx:id="customerNames" prefWidth="137.1434326171875" text="Customer Name" />
+                        <TableColumn fx:id="productName" prefWidth="125.00054931640625" text="Product Name" />
+                        <TableColumn fx:id="productCode" prefWidth="102.8575439453125" text="Product Code" />
+                        <TableColumn fx:id="numberOfTrays" prefWidth="83.57171630859375" text="Number of Trays" />
+                        <TableColumn fx:id="numberOfEggs" prefWidth="110.00054931640625" text="Number of Eggs" />
+                        <TableColumn fx:id="orderDate" prefWidth="70.00038677729049" text="Date" />
+                        <TableColumn fx:id="paymentStatus" prefWidth="70.00038677729049" text="Payment Status" />
+                     </columns>
+                     <BorderPane.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </BorderPane.margin>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </center>
+               <BorderPane.margin>
+                  <Insets right="10.0" />
+               </BorderPane.margin>
+            </BorderPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
