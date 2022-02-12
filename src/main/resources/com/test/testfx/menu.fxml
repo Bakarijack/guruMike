@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.test.testfx.Menu">
+   <children>
+      <Button layoutX="76.0" layoutY="74.0" mnemonicParsing="false" text="click">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
